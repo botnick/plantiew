@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /og-card.html
+Disallow: /icon.html
+
+Sitemap: https://plantiew.com/sitemap.xml

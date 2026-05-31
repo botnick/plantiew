@@ -1,0 +1,609 @@
+<!doctype html>
+<html lang="th">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>plantiew.com | แพลนเที่ยวให้เป็นเรื่องง่าย พร้อมแผนรายวันและ PDF</title>
+  <meta name="description" content="plantiew.com แพลตฟอร์มช่วยวางแผนเที่ยวสำหรับคนไทย ใส่เมือง วันที่ และสไตล์เที่ยว เพื่อสร้างแพลนทริป แนะนำสถานที่ จุดแวะ กิจกรรม แผนที่ แหล่งข้อมูล และ PDF สำหรับพิมพ์" />
+  <meta name="keywords" content="แพลนเที่ยว, วางแผนเที่ยว, แพลนทริป, trip planner, itinerary planner, travel planner, แผนเที่ยว, วางแผนเที่ยวต่างประเทศ, แพลนเที่ยวเอง, แพลนเที่ยว PDF, hidden spots, local travel, travel itinerary" />
+  <meta name="author" content="plantiew.com" />
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+  <meta name="theme-color" content="#1f6fe5" />
+  <link rel="canonical" href="https://plantiew.com/" />
+  <link rel="alternate" hreflang="th" href="https://plantiew.com/" />
+  <link rel="alternate" hreflang="x-default" href="https://plantiew.com/" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2032%2032'%3E%3Crect%20width='32'%20height='32'%20rx='9'%20fill='%231f6fe5'/%3E%3Cg%20fill='none'%20stroke='%23fff'%20stroke-width='2'%20stroke-linecap='round'%20stroke-linejoin='round'%3E%3Cpath%20d='M16 25s-6-5.2-6-10a6 6 0 0 1 12 0c0 4.8-6 10-6 10Z'/%3E%3Ccircle%20cx='16'%20cy='15'%20r='2.4'/%3E%3C/g%3E%3C/svg%3E" />
+
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+  <link rel="manifest" href="site.webmanifest" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="plantiew.com" />
+  <meta property="og:title" content="plantiew.com | แพลนเที่ยวให้เป็นเรื่องง่าย" />
+  <meta property="og:description" content="สร้างแพลนเที่ยวจากเมือง วันที่ และสไตล์เที่ยว พร้อมสถานที่ จุดแวะ แผนที่ source และ PDF" />
+  <meta property="og:url" content="https://plantiew.com/" />
+  <meta property="og:image" content="https://plantiew.com/og-image.png" />
+  <meta property="og:image:type" content="image/png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="plantiew.com — แพลนเที่ยวรายวันพร้อมแผนที่และ PDF" />
+  <meta property="og:locale" content="th_TH" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="plantiew.com | แพลนเที่ยวให้เป็นเรื่องง่าย" />
+  <meta name="twitter:description" content="แพลตฟอร์มช่วยวางแผนเที่ยวสำหรับคนไทย พร้อมแผนรายวัน แผนที่ และ PDF" />
+  <meta name="twitter:image" content="https://plantiew.com/og-image.png" />
+  <meta name="twitter:image:alt" content="plantiew.com — แพลนเที่ยวรายวันพร้อมแผนที่และ PDF" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:wght@300;400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      { "@type": "Organization", "@id": "https://plantiew.com/#org", "name": "plantiew.com", "alternateName": "แพลนเที่ยว", "url": "https://plantiew.com/", "logo": "https://plantiew.com/logo.png" },
+      { "@type": "WebSite", "@id": "https://plantiew.com/#website", "name": "plantiew.com", "alternateName": "แพลนเที่ยว", "url": "https://plantiew.com/", "description": "แพลตฟอร์มช่วยสร้างแพลนเที่ยวสำหรับคนไทย รองรับการวางแผนทริปหลายประเทศ พร้อมแผนรายวัน แผนที่ แหล่งข้อมูล และ PDF", "inLanguage": "th-TH", "publisher": { "@id": "https://plantiew.com/#org" } },
+      { "@type": "SoftwareApplication", "name": "plantiew.com", "applicationCategory": "TravelApplication", "operatingSystem": "Web", "inLanguage": "th-TH", "url": "https://plantiew.com/", "description": "เว็บแอปช่วยวางแผนเที่ยว สร้างแพลนทริปพร้อมสถานที่ จุดแวะ แผนที่ source และ PDF", "offers": { "@type": "Offer", "price": "0", "priceCurrency": "THB" } },
+      { "@type": "FAQPage", "@id": "https://plantiew.com/#faq", "inLanguage": "th-TH", "mainEntity": [
+        { "@type": "Question", "name": "plantiew คืออะไร", "acceptedAnswer": { "@type": "Answer", "text": "plantiew คือแพลตฟอร์มช่วยวางแผนเที่ยวสำหรับคนไทย ที่เปลี่ยนข้อมูลเที่ยวที่กระจัดกระจายให้กลายเป็นแพลนรายวันที่เข้าใจง่าย พร้อมสถานที่ จุดแวะ แผนที่ แหล่งข้อมูล และ PDF สำหรับเก็บไปใช้ระหว่างทริป" } },
+        { "@type": "Question", "name": "plantiew ใช้ฟรีไหม", "acceptedAnswer": { "@type": "Answer", "text": "ช่วงเปิดตัวแรก plantiew จะเปิดให้ทดลองใช้ฟรี ตอนนี้อยู่ระหว่างเตรียมเปิด beta ลงอีเมลไว้เพื่อรับสิทธิ์ใช้ก่อนใครได้เลย" } },
+        { "@type": "Question", "name": "plantiew รองรับการเที่ยวประเทศไหนบ้าง", "acceptedAnswer": { "@type": "Answer", "text": "plantiew ออกแบบให้เป็นแพลตฟอร์มหลายประเทศตั้งแต่แรก รองรับหลายเมือง หลายแหล่งข้อมูล และหลายรูปแบบแพลน ไม่ผูกกับปลายทางเดียว" } },
+        { "@type": "Question", "name": "บันทึกแพลนเป็น PDF ได้ไหม", "acceptedAnswer": { "@type": "Answer", "text": "ได้ plantiew มีหน้า print-ready สำหรับบันทึกแพลนเป็น PDF พร้อมสถานที่ จุดแวะ Google Maps links และแหล่งข้อมูล เพื่อเก็บไว้ใช้ระหว่างทริปแบบออฟไลน์" } },
+        { "@type": "Question", "name": "plantiew จะเปิดให้ใช้งานเมื่อไหร่", "acceptedAnswer": { "@type": "Answer", "text": "plantiew กำลังเตรียมเปิด beta เร็ว ๆ นี้ ลงอีเมลในหน้านี้เพื่อรับแจ้งเตือนทันทีที่เปิดให้ใช้งาน" } }
+      ] }
+    ]
+  }
+  </script>
+
+  <style>
+    :root {
+      --blue: #1f6fe5;
+      --blue-deep: #1559bf;
+      --blue-soft: #ebf3fe;
+      --blue-100: #d8e8fd;
+      --orange: #ff6a2c;
+      --orange-deep: #e4541a;
+      --orange-soft: #fff1e9;
+      --teal: #0fa9b6;
+      --teal-soft: #e3f7f8;
+      --ink: #112038;
+      --slate: #4a5b75;
+      --faint: #8392a8;
+      --bg: #f3f7fd;
+      --card: #ffffff;
+      --border: #e3ecf7;
+      --border-2: #eef3fa;
+      --sh-sm: 0 2px 10px rgba(20,45,90,.05);
+      --sh: 0 14px 34px rgba(20,50,100,.09);
+      --sh-lg: 0 26px 64px rgba(20,50,100,.14);
+      --sh-blue: 0 16px 34px rgba(31,111,229,.26);
+      --sh-orange: 0 16px 34px rgba(255,106,44,.28);
+      --r-sm: 12px;
+      --r: 18px;
+      --r-lg: 26px;
+      --max: 1180px;
+      --sans: "IBM Plex Sans Thai", "IBM Plex Sans", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0; color: var(--ink); font-family: var(--sans);
+      font-weight: 400; line-height: 1.6; background: var(--bg);
+      overflow-x: hidden; -webkit-font-smoothing: antialiased;
+    }
+    /* soft airy background washes */
+    body::before {
+      content: ""; position: fixed; inset: 0; z-index: -1; pointer-events: none;
+      background:
+        radial-gradient(680px 420px at 88% -6%, rgba(31,111,229,.10), transparent 70%),
+        radial-gradient(560px 380px at -4% 4%, rgba(15,169,182,.09), transparent 70%),
+        radial-gradient(620px 480px at 50% 108%, rgba(255,106,44,.07), transparent 70%);
+    }
+
+    a { color: inherit; text-decoration: none; }
+    .wrap { width: min(var(--max), calc(100% - 40px)); margin: 0 auto; }
+
+    .skip-link { position: absolute; left: -999px; top: 14px; z-index: 100; background: var(--ink); color: #fff; padding: 10px 14px; border-radius: 10px; }
+    .skip-link:focus { left: 16px; }
+    :focus-visible { outline: 3px solid var(--blue); outline-offset: 3px; border-radius: 8px; }
+
+    h1, h2, h3 { font-weight: 700; letter-spacing: -.01em; }
+
+    .label {
+      display: inline-flex; align-items: center; gap: 8px;
+      font-size: 12.5px; font-weight: 700; letter-spacing: .04em;
+      color: var(--blue-deep); background: var(--blue-soft);
+      padding: 7px 13px; border-radius: 999px;
+    }
+    .label .tick { width: 7px; height: 7px; border-radius: 999px; background: var(--teal); box-shadow: 0 0 0 4px rgba(15,169,182,.18); }
+
+    /* ---------- nav ---------- */
+    .nav-wrap { position: sticky; top: 0; z-index: 50; background: rgba(255,255,255,.86); backdrop-filter: blur(14px); border-bottom: 1px solid var(--border); transition: box-shadow .2s ease; }
+    .nav-wrap.scrolled { box-shadow: var(--sh-sm); }
+    .nav { min-height: 72px; display: flex; align-items: center; justify-content: space-between; gap: 22px; }
+    .brand { display: flex; align-items: center; gap: 11px; }
+    .brand-mark { width: 40px; height: 40px; border-radius: 12px; background: linear-gradient(150deg, var(--blue), #3f86f2); display: grid; place-items: center; box-shadow: var(--sh-blue); }
+    .brand-mark svg { width: 22px; height: 22px; color: #fff; }
+    .brand-name { font-weight: 700; font-size: 21px; letter-spacing: -.02em; line-height: 1; }
+    .brand-name small { display: block; font-size: 11px; font-weight: 600; letter-spacing: .02em; color: var(--faint); margin-top: 3px; }
+    .nav-links { display: flex; align-items: center; gap: 26px; }
+    .nav-links a:not(.nav-cta) { font-size: 14px; font-weight: 600; color: var(--slate); }
+    .nav-links a:not(.nav-cta):hover { color: var(--blue); }
+    .nav-cta { font-size: 14px; font-weight: 700; padding: 10px 18px; border-radius: 999px; background: var(--blue); color: #fff; box-shadow: var(--sh-blue); transition: transform .16s ease; }
+    .nav-cta:hover { transform: translateY(-1px); }
+
+    /* ---------- buttons ---------- */
+    .btn {
+      display: inline-flex; align-items: center; justify-content: center; gap: 9px;
+      min-height: 52px; padding: 0 24px; border-radius: 999px; border: 1.5px solid transparent;
+      font-family: inherit; font-size: 15px; font-weight: 700; cursor: pointer;
+      transition: transform .16s ease, box-shadow .16s ease, background .2s ease;
+    }
+    .btn svg { width: 18px; height: 18px; }
+    .btn:hover { transform: translateY(-2px); }
+    .btn-accent { background: var(--orange); color: #fff; box-shadow: var(--sh-orange); }
+    .btn-accent:hover { background: var(--orange-deep); }
+    .btn-blue { background: var(--blue); color: #fff; box-shadow: var(--sh-blue); }
+    .btn-blue:hover { background: var(--blue-deep); }
+    .btn-ghost { background: #fff; color: var(--ink); border-color: var(--border); box-shadow: var(--sh-sm); }
+    .btn-ghost:hover { border-color: var(--blue-100); color: var(--blue); }
+
+    /* ---------- hero ---------- */
+    .hero { padding: 56px 0 30px; }
+    .hero-grid { display: grid; grid-template-columns: 1.02fr .98fr; gap: 56px; align-items: center; }
+    h1.hero-title { font-size: clamp(40px, 5.6vw, 74px); line-height: 1.04; letter-spacing: -.025em; margin: 22px 0 0; }
+    h1.hero-title .blue { color: var(--blue); }
+    h1.hero-title .orange { color: var(--orange); }
+    .hero-lead { margin: 22px 0 0; max-width: 32em; font-size: clamp(16px, 1.55vw, 19px); line-height: 1.72; color: var(--slate); }
+    .hero-actions { margin-top: 30px; display: flex; flex-wrap: wrap; gap: 13px; align-items: center; }
+    .hero-trust { margin-top: 24px; display: flex; flex-wrap: wrap; gap: 10px 22px; }
+    .hero-trust span { display: inline-flex; align-items: center; gap: 8px; font-size: 13.5px; font-weight: 600; color: var(--slate); }
+    .hero-trust svg { width: 17px; height: 17px; color: var(--teal); }
+
+    /* plan builder card */
+    .hero-art { position: relative; }
+    .builder {
+      position: relative; z-index: 2; background: var(--card); border: 1px solid var(--border);
+      border-radius: var(--r-lg); padding: 22px; box-shadow: var(--sh-lg);
+    }
+    .builder-top { display: flex; align-items: center; justify-content: space-between; margin-bottom: 6px; }
+    .builder-top strong { font-size: 16px; font-weight: 700; }
+    .builder-top .chip-soft { font-size: 11.5px; font-weight: 700; color: var(--teal); background: var(--teal-soft); padding: 5px 10px; border-radius: 999px; }
+    .field { display: flex; align-items: center; gap: 13px; padding: 14px 15px; border: 1px solid var(--border); border-radius: var(--r); margin-top: 12px; background: #fcfdff; }
+    .field .fi { width: 40px; height: 40px; flex: none; border-radius: 11px; display: grid; place-items: center; }
+    .field .fi svg { width: 20px; height: 20px; }
+    .field:nth-child(2) .fi { background: var(--blue-soft); color: var(--blue); }
+    .field:nth-child(3) .fi { background: var(--orange-soft); color: var(--orange-deep); }
+    .field:nth-child(4) .fi { background: var(--teal-soft); color: var(--teal); }
+    .field .ft { display: block; font-size: 11.5px; font-weight: 600; color: var(--faint); letter-spacing: .01em; }
+    .field .fv { display: block; font-size: 15.5px; font-weight: 700; letter-spacing: -.01em; margin-top: 1px; }
+    .field .fv .mini-chips { font-weight: 600; }
+    .mini-chips span { display: inline-block; font-size: 12px; font-weight: 600; color: var(--slate); background: #eef3fa; border-radius: 999px; padding: 3px 9px; margin: 3px 4px 0 0; }
+    .builder .btn-blue { width: 100%; margin-top: 16px; }
+
+    .float-card {
+      position: absolute; z-index: 3; background: #fff; border: 1px solid var(--border);
+      border-radius: 16px; box-shadow: var(--sh-lg); padding: 13px 15px;
+      display: flex; align-items: center; gap: 12px;
+    }
+    .float-card .fc-ic { width: 38px; height: 38px; flex: none; border-radius: 11px; display: grid; place-items: center; background: var(--blue-soft); color: var(--blue); }
+    .float-card .fc-ic svg { width: 19px; height: 19px; }
+    .float-card strong { display: block; font-size: 13.5px; font-weight: 700; }
+    .float-card span { display: block; font-size: 11.5px; color: var(--faint); margin-top: 1px; }
+    .float-card.one { top: -26px; left: -26px; }
+    .float-card.two { bottom: -24px; right: -22px; }
+    .float-card.two .fc-ic { background: var(--orange-soft); color: var(--orange-deep); }
+
+    /* destination chips */
+    .dests { margin-top: 26px; }
+    .dests .dt { font-size: 12.5px; font-weight: 600; color: var(--faint); margin: 0 0 11px; }
+    .chip-row { display: flex; flex-wrap: wrap; gap: 9px; }
+    .dchip { display: inline-flex; align-items: center; gap: 7px; font-size: 13.5px; font-weight: 600; color: var(--slate); background: #fff; border: 1px solid var(--border); border-radius: 999px; padding: 8px 14px; box-shadow: var(--sh-sm); transition: border-color .18s ease, color .18s ease, transform .16s ease; }
+    .dchip:hover { border-color: var(--blue-100); color: var(--blue); transform: translateY(-1px); }
+    .dchip svg { width: 15px; height: 15px; color: var(--orange); }
+
+    /* ---------- sections ---------- */
+    .section { padding: 72px 0; }
+    .sec-head { max-width: 720px; margin: 0 auto 44px; text-align: center; }
+    .sec-head h2 { font-size: clamp(28px, 3.6vw, 46px); line-height: 1.2; margin: 14px 0 0; }
+    .sec-head p { color: var(--slate); font-size: 16.5px; line-height: 1.7; margin: 14px auto 0; max-width: 36em; }
+
+    /* features */
+    .features { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+    .fcard { background: var(--card); border: 1px solid var(--border); border-radius: var(--r-lg); padding: 30px 28px; box-shadow: var(--sh-sm); transition: transform .18s ease, box-shadow .18s ease; }
+    .fcard:hover { transform: translateY(-4px); box-shadow: var(--sh); }
+    .fcard .badge { width: 56px; height: 56px; border-radius: 16px; display: grid; place-items: center; margin-bottom: 20px; }
+    .fcard:nth-child(1) .badge { background: var(--blue-soft); color: var(--blue); }
+    .fcard:nth-child(2) .badge { background: var(--orange-soft); color: var(--orange-deep); }
+    .fcard:nth-child(3) .badge { background: var(--teal-soft); color: var(--teal); }
+    .fcard .badge svg { width: 27px; height: 27px; }
+    .fcard h3 { font-size: 21px; line-height: 1.28; margin: 0; }
+    .fcard p { color: var(--slate); font-size: 15px; line-height: 1.72; margin: 12px 0 0; }
+
+    /* how it works */
+    .how { background: var(--card); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); }
+    .steps { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; position: relative; }
+    .step { text-align: center; }
+    .step .ring { width: 64px; height: 64px; margin: 0 auto; border-radius: 999px; background: var(--blue-soft); color: var(--blue); display: grid; place-items: center; position: relative; }
+    .step .ring svg { width: 28px; height: 28px; }
+    .step .ring .n { position: absolute; right: -4px; top: -4px; width: 24px; height: 24px; border-radius: 999px; background: var(--blue); color: #fff; font-size: 12px; font-weight: 700; display: grid; place-items: center; box-shadow: var(--sh-sm); }
+    .step:nth-child(2) .ring { background: var(--orange-soft); color: var(--orange-deep); }
+    .step:nth-child(2) .ring .n { background: var(--orange); }
+    .step:nth-child(3) .ring { background: var(--teal-soft); color: var(--teal); }
+    .step:nth-child(3) .ring .n { background: var(--teal); }
+    .step h3 { font-size: 20px; line-height: 1.3; margin: 20px 0 0; }
+    .step p { color: var(--slate); font-size: 14.5px; line-height: 1.7; margin: 10px auto 0; max-width: 22em; }
+
+    /* scale band */
+    .band { background: linear-gradient(160deg, #11315f, #1f6fe5); color: #fff; border-radius: var(--r-lg); padding: clamp(30px, 4.5vw, 56px); box-shadow: var(--sh-lg); position: relative; overflow: hidden; }
+    .band::after { content: ""; position: absolute; right: -90px; top: -90px; width: 320px; height: 320px; border-radius: 999px; background: radial-gradient(circle, rgba(255,106,44,.4), transparent 65%); }
+    .band-grid { position: relative; z-index: 1; display: grid; grid-template-columns: 1fr 1fr; gap: 40px; align-items: center; }
+    .band .label { background: rgba(255,255,255,.14); color: #eaf2ff; }
+    .band h2 { font-size: clamp(26px, 3.4vw, 44px); line-height: 1.22; margin: 16px 0 0; }
+    .band p { color: rgba(234,242,255,.82); font-size: 16px; line-height: 1.75; margin: 16px 0 0; max-width: 34em; }
+    .feat-list { display: grid; gap: 12px; }
+    .feat-row { display: flex; align-items: center; gap: 14px; background: rgba(255,255,255,.10); border: 1px solid rgba(255,255,255,.16); border-radius: var(--r); padding: 16px 18px; }
+    .feat-row .ck { width: 30px; height: 30px; flex: none; border-radius: 9px; background: rgba(255,255,255,.16); display: grid; place-items: center; color: #fff; }
+    .feat-row .ck svg { width: 18px; height: 18px; }
+    .feat-row strong { font-size: 15.5px; font-weight: 700; }
+    .feat-row span { display: block; font-size: 13px; color: rgba(234,242,255,.72); margin-top: 1px; }
+
+    .seo-note { margin-top: 22px; color: var(--slate); font-size: 14.5px; line-height: 1.85; text-align: center; max-width: 60em; margin-left: auto; margin-right: auto; }
+
+    /* faq */
+    .faq { max-width: 860px; margin: 0 auto; display: grid; gap: 12px; }
+    .faq-item { background: var(--card); border: 1px solid var(--border); border-radius: var(--r); overflow: hidden; transition: box-shadow .18s ease; }
+    .faq-item[open] { box-shadow: var(--sh-sm); }
+    .faq-item summary { list-style: none; cursor: pointer; padding: 20px 22px; font-size: 17px; font-weight: 600; line-height: 1.4; display: flex; align-items: center; justify-content: space-between; gap: 18px; }
+    .faq-item summary::-webkit-details-marker { display: none; }
+    .faq-item .pm { flex: none; width: 22px; height: 22px; position: relative; }
+    .faq-item .pm::before, .faq-item .pm::after { content: ""; position: absolute; background: var(--blue); border-radius: 2px; }
+    .faq-item .pm::before { left: 0; top: 10px; width: 22px; height: 2px; }
+    .faq-item .pm::after { left: 10px; top: 0; width: 2px; height: 22px; transition: transform .22s ease; }
+    .faq-item[open] .pm::after { transform: scaleY(0); }
+    .faq-item .answer { padding: 0 22px 22px; color: var(--slate); font-size: 15px; line-height: 1.8; }
+
+    /* waitlist */
+    .cta-card { background: var(--card); border: 1px solid var(--border); border-radius: var(--r-lg); box-shadow: var(--sh-lg); display: grid; grid-template-columns: 1.15fr .85fr; overflow: hidden; }
+    .cta-main { padding: clamp(30px, 4vw, 48px); }
+    .cta-main h2 { font-size: clamp(26px, 3.2vw, 40px); line-height: 1.2; margin: 14px 0 0; }
+    .cta-main p { color: var(--slate); font-size: 15.5px; line-height: 1.72; margin: 14px 0 0; max-width: 38em; }
+    form.waitlist { display: grid; grid-template-columns: 1fr auto; gap: 11px; margin-top: 24px; max-width: 540px; }
+    form.waitlist label { position: absolute; left: -9999px; }
+    form.waitlist input { width: 100%; min-height: 54px; border: 1.5px solid var(--border); border-radius: 999px; background: #fff; color: var(--ink); padding: 0 20px; font: inherit; outline: none; transition: border-color .18s ease; }
+    form.waitlist input:focus { border-color: var(--blue); }
+    form.waitlist input::placeholder { color: var(--faint); }
+    .form-status { margin-top: 12px; font-size: 13.5px; font-weight: 600; color: var(--blue-deep); min-height: 18px; }
+    .cta-main .micro { margin-top: 12px; font-size: 12.5px; color: var(--faint); line-height: 1.6; }
+    .cta-side { background: linear-gradient(165deg, var(--blue-soft), #f4f9ff); border-left: 1px solid var(--border); padding: clamp(26px, 3vw, 40px); display: grid; align-content: center; gap: 14px; }
+    .cta-side .row { display: flex; align-items: center; gap: 12px; }
+    .cta-side .row .ic { width: 38px; height: 38px; flex: none; border-radius: 11px; background: #fff; box-shadow: var(--sh-sm); display: grid; place-items: center; color: var(--blue); }
+    .cta-side .row .ic svg { width: 19px; height: 19px; }
+    .cta-side .row strong { font-size: 14.5px; font-weight: 700; }
+    .cta-side .row span { display: block; font-size: 12.5px; color: var(--slate); margin-top: 1px; }
+
+    /* footer */
+    footer { border-top: 1px solid var(--border); padding: 38px 0 50px; }
+    .foot { display: flex; align-items: center; justify-content: space-between; gap: 18px; flex-wrap: wrap; }
+    .foot .fbrand { display: flex; align-items: center; gap: 10px; font-weight: 700; }
+    .foot .fbrand .brand-mark { width: 32px; height: 32px; border-radius: 9px; }
+    .foot .fbrand .brand-mark svg { width: 18px; height: 18px; }
+    .foot small { color: var(--faint); font-size: 13px; }
+    .foot-links { display: flex; gap: 18px; }
+    .foot-links a { font-size: 13px; font-weight: 600; color: var(--slate); }
+    .foot-links a:hover { color: var(--blue); }
+
+    .reveal { will-change: opacity, transform; }
+    @media (prefers-reduced-motion: no-preference) {
+      .reveal { opacity: 0; transform: translateY(20px); transition: opacity .7s ease, transform .7s ease; }
+      .reveal.in { opacity: 1; transform: none; }
+    }
+
+    @media (max-width: 940px) {
+      .hero-grid { grid-template-columns: 1fr; gap: 54px; }
+      .hero-art { max-width: 460px; margin: 8px auto 0; }
+      .features { grid-template-columns: 1fr; }
+      .steps { grid-template-columns: 1fr; gap: 30px; }
+      .band-grid { grid-template-columns: 1fr; gap: 26px; }
+      .cta-card { grid-template-columns: 1fr; }
+      .cta-side { border-left: 0; border-top: 1px solid var(--border); }
+      .nav-links a:not(.nav-cta) { display: none; }
+    }
+    @media (max-width: 600px) {
+      .wrap { width: min(var(--max), calc(100% - 30px)); }
+      .hero { padding: 40px 0 20px; }
+      .section { padding: 54px 0; }
+      h1.hero-title { font-size: clamp(36px, 11vw, 52px); }
+      .hero-actions, form.waitlist { display: grid; grid-template-columns: 1fr; }
+      .btn { width: 100%; }
+      .float-card { display: none; }
+      .features { grid-template-columns: 1fr; }
+      .foot { flex-direction: column; align-items: flex-start; }
+    }
+  </style>
+</head>
+
+<body>
+  <a class="skip-link" href="#main">ข้ามไปยังเนื้อหา</a>
+
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
+    <symbol id="i-compass" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><polygon points="16,8 10.5,10.5 8,16 13.5,13.5"/></g></symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-6-5.4-6-10a6 6 0 0 1 12 0c0 4.6-6 10-6 10Z"/><circle cx="12" cy="11" r="2.3"/></g></symbol>
+    <symbol id="i-cal" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="5.5" width="16" height="15" rx="2.5"/><path d="M4 10h16M8.5 3v4M15.5 3v4"/></g></symbol>
+    <symbol id="i-doc" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M7 3h7l4 4v13a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1Z"/><path d="M14 3v4h4M9 13h6M9 16.5h4"/></g></symbol>
+    <symbol id="i-arrow" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></g></symbol>
+    <symbol id="i-route" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="6" cy="6" r="2.4"/><circle cx="18" cy="18" r="2.4"/><path d="M8.4 6H14a3.6 3.6 0 0 1 0 7.2H9.6A3.6 3.6 0 0 0 9.6 21"/></g></symbol>
+    <symbol id="i-print" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M7 9V4h10v5M7 18H6a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2h-1M7 15h10v5H7z"/></g></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5 10 17l9-10"/></g></symbol>
+    <symbol id="i-map" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="m9 4-6 2v14l6-2 6 2 6-2V4l-6 2-6-2Z"/><path d="M9 4v14M15 6v14"/></g></symbol>
+    <symbol id="i-globe" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.6 2.5 15.4 0 18M12 3c-2.5 2.6-2.5 15.4 0 18"/></g></symbol>
+    <symbol id="i-clock" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7.5V12l3 2"/></g></symbol>
+    <symbol id="i-bolt" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M13 3 5 13h6l-1 8 8-10h-6l1-8Z"/></g></symbol>
+  </defs></svg>
+
+  <header class="nav-wrap">
+    <div class="wrap nav">
+      <a class="brand" href="#top" aria-label="plantiew.com แพลนเที่ยว">
+        <span class="brand-mark" aria-hidden="true"><svg><use href="#i-pin"/></svg></span>
+        <span class="brand-name">plantiew<small>แพลนเที่ยว</small></span>
+      </a>
+      <nav class="nav-links" aria-label="เมนูหลัก">
+        <a href="#features">จุดเด่น</a>
+        <a href="#how">วิธีทำงาน</a>
+        <a href="#scale">หลายประเทศ</a>
+        <a href="#faq">คำถาม</a>
+        <a class="nav-cta" href="#waitlist">Coming soon</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="top">
+      <div class="wrap hero-grid">
+        <div class="hero-copy">
+          <h1 class="hero-title">วางแผนเที่ยว<br>ให้เป็นเรื่อง<span class="blue">ง่าย</span></h1>
+          <p class="hero-lead">
+            plantiew ช่วยเปลี่ยนข้อมูลเที่ยวที่กระจัดกระจายให้เป็นแพลนรายวันที่เข้าใจง่าย
+            พร้อมสถานที่ จุดแวะ แผนที่ แหล่งข้อมูล และ PDF สำหรับเก็บไปใช้ระหว่างทริป
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-accent" href="#waitlist">เข้าร่วมรายชื่อรอใช้งาน<svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
+            <a class="btn btn-ghost" href="#features">ดูแนวคิด</a>
+          </div>
+          <div class="hero-trust">
+            <span><svg aria-hidden="true"><use href="#i-globe"/></svg>หลายประเทศตั้งแต่แรก</span>
+            <span><svg aria-hidden="true"><use href="#i-map"/></svg>มีแผนที่ + source</span>
+            <span><svg aria-hidden="true"><use href="#i-doc"/></svg>บันทึกเป็น PDF</span>
+          </div>
+
+          <div class="dests">
+            <p class="dt">ปลายทางยอดนิยม</p>
+            <div class="chip-row">
+              <span class="dchip"><svg aria-hidden="true"><use href="#i-pin"/></svg>กรุงเทพ</span>
+              <span class="dchip"><svg aria-hidden="true"><use href="#i-pin"/></svg>เชียงใหม่</span>
+              <span class="dchip"><svg aria-hidden="true"><use href="#i-pin"/></svg>ภูเก็ต</span>
+              <span class="dchip"><svg aria-hidden="true"><use href="#i-pin"/></svg>โตเกียว</span>
+              <span class="dchip"><svg aria-hidden="true"><use href="#i-pin"/></svg>โซล</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-art">
+          <div class="float-card one" aria-hidden="true">
+            <span class="fc-ic"><svg><use href="#i-clock"/></svg></span>
+            <span><strong>แผนรายวัน</strong><span>09:30 · เดินย่านเมืองเก่า</span></span>
+          </div>
+
+          <article class="builder" aria-label="ตัวอย่างการสร้างแพลนเที่ยว">
+            <div class="builder-top">
+              <strong>ลองสร้างแพลน</strong>
+              <span class="chip-soft">ตัวอย่าง</span>
+            </div>
+            <div class="field">
+              <span class="fi" aria-hidden="true"><svg><use href="#i-pin"/></svg></span>
+              <span><span class="ft">เมืองปลายทาง</span><span class="fv">เชียงใหม่, ไทย</span></span>
+            </div>
+            <div class="field">
+              <span class="fi" aria-hidden="true"><svg><use href="#i-cal"/></svg></span>
+              <span><span class="ft">ช่วงวันที่</span><span class="fv">12 – 14 ก.ค. · 3 วัน</span></span>
+            </div>
+            <div class="field">
+              <span class="fi" aria-hidden="true"><svg><use href="#i-compass"/></svg></span>
+              <span><span class="ft">สไตล์เที่ยว</span><span class="fv"><span class="mini-chips"><span>สายกิน</span><span>ไม่แมส</span><span>เดินย่าน</span></span></span></span>
+            </div>
+            <a class="btn btn-blue" href="#waitlist">สร้างแพลน<svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
+          </article>
+
+          <div class="float-card two" aria-hidden="true">
+            <span class="fc-ic"><svg><use href="#i-doc"/></svg></span>
+            <span><strong>พร้อม PDF</strong><span>เก็บไปใช้ระหว่างทริป</span></span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="features">
+      <div class="wrap">
+        <div class="sec-head reveal">
+          <span class="label">Why plantiew</span>
+          <h2>แพลนเที่ยวที่มีบริบทกว่าเดิม</h2>
+          <p>สำหรับคนที่อยากวางแผนเอง แต่ไม่อยากเริ่มจากศูนย์ หรือจบที่ลิสต์แลนด์มาร์กซ้ำ ๆ</p>
+        </div>
+        <div class="features">
+          <article class="fcard reveal">
+            <span class="badge" aria-hidden="true"><svg><use href="#i-compass"/></svg></span>
+            <h3>วางแผนจากข้อจำกัดจริง</h3>
+            <p>ใส่เมือง วันที่ จำนวนวัน สไตล์เที่ยว และสิ่งที่อยากเลี่ยง ระบบจะจัดไอเดียให้เข้ากับบริบทของทริป</p>
+          </article>
+          <article class="fcard reveal">
+            <span class="badge" aria-hidden="true"><svg><use href="#i-pin"/></svg></span>
+            <h3>หาไอเดียที่ไม่ใช่แค่ที่แมส</h3>
+            <p>ช่วยค้นหาย่านน่าเดิน จุดแวะ ตลาด กิจกรรม และสถานที่ที่เหมาะกับสไตล์ของคุณมากกว่าแพลนสำเร็จรูป</p>
+          </article>
+          <article class="fcard reveal">
+            <span class="badge" aria-hidden="true"><svg><use href="#i-doc"/></svg></span>
+            <h3>มีแหล่งข้อมูลและ PDF</h3>
+            <p>แสดง source, สถานะข้อมูล, Google Maps links และหน้า print-ready สำหรับบันทึกเป็น PDF</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section how" id="how">
+      <div class="wrap">
+        <div class="sec-head reveal">
+          <span class="label">How it works</span>
+          <h2>วางแผนอย่างชาญฉลาด ในไม่กี่ขั้นตอน</h2>
+          <p>จากข้อมูลที่ตั้งไว้ ไปจนถึงแพลนรายวันที่พิมพ์เก็บไปใช้ได้จริง</p>
+        </div>
+        <div class="steps">
+          <article class="step reveal">
+            <span class="ring" aria-hidden="true"><svg><use href="#i-cal"/></svg><span class="n">1</span></span>
+            <h3>ตั้งสไตล์ของคุณ</h3>
+            <p>บอกเมือง วันที่ งบประมาณคร่าว ๆ สไตล์เที่ยว และข้อจำกัดที่ต้องรู้</p>
+          </article>
+          <article class="step reveal">
+            <span class="ring" aria-hidden="true"><svg><use href="#i-route"/></svg><span class="n">2</span></span>
+            <h3>ค้นหาและจัดแพลน</h3>
+            <p>ระบบช่วยหาไอเดียจากหลายแหล่ง คัดให้เข้ากับบริบท แล้วจัดเป็นแผนรายวัน</p>
+          </article>
+          <article class="step reveal">
+            <span class="ring" aria-hidden="true"><svg><use href="#i-print"/></svg><span class="n">3</span></span>
+            <h3>พิมพ์แล้วออกเดินทาง</h3>
+            <p>เปิดแผนที่ ดู source ปรับรายการ และบันทึกเป็น PDF เพื่อใช้ระหว่างทริป</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="scale">
+      <div class="wrap">
+        <div class="band reveal">
+          <div class="band-grid">
+            <div>
+              <span class="label">Built to scale</span>
+              <h2>ไม่ได้เกิดมาเพื่อประเทศเดียว</h2>
+              <p>โครงระบบรองรับหลายประเทศ หลายเมือง หลาย source และหลายรูปแบบแพลน ตั้งแต่วันแรก พร้อมต่อยอดให้ creator และทีมทำ itinerary ในอนาคต</p>
+            </div>
+            <div class="feat-list">
+              <div class="feat-row"><span class="ck" aria-hidden="true"><svg><use href="#i-globe"/></svg></span><span><strong>Multi-country</strong><span>ขยายปลายทางได้ไม่จำกัด</span></span></div>
+              <div class="feat-row"><span class="ck" aria-hidden="true"><svg><use href="#i-check"/></svg></span><span><strong>Source-backed</strong><span>มีแหล่งข้อมูลและสถานะตรวจซ้ำ</span></span></div>
+              <div class="feat-row"><span class="ck" aria-hidden="true"><svg><use href="#i-doc"/></svg></span><span><strong>PDF-first</strong><span>พิมพ์หรือส่งต่อได้ทันที</span></span></div>
+              <div class="feat-row"><span class="ck" aria-hidden="true"><svg><use href="#i-bolt"/></svg></span><span><strong>Creator-ready</strong><span>ต่อยอดเชิงรายได้ในอนาคต</span></span></div>
+            </div>
+          </div>
+        </div>
+        <p class="seo-note reveal">
+          plantiew.com เป็นแพลตฟอร์มช่วยวางแผนเที่ยวสำหรับคนไทยที่ต้องการสร้างแพลนทริปเองแบบมีโครงสร้าง รองรับการค้นหาไอเดียเที่ยว สถานที่น่าสนใจ จุดแวะ ย่านน่าเดิน กิจกรรมตามช่วงเวลา แหล่งข้อมูล และแผนที่ โดยออกแบบให้สามารถเติบโตไปได้หลายประเทศ ไม่จำกัดอยู่กับปลายทางใดปลายทางหนึ่ง
+        </p>
+      </div>
+    </section>
+
+    <section class="section" id="faq">
+      <div class="wrap">
+        <div class="sec-head reveal">
+          <span class="label">FAQ</span>
+          <h2>คำถามที่พบบ่อย</h2>
+          <p>รวมข้อสงสัยก่อน plantiew เปิดให้ใช้งาน</p>
+        </div>
+        <div class="faq reveal">
+          <details class="faq-item" open>
+            <summary>plantiew คืออะไร<span class="pm" aria-hidden="true"></span></summary>
+            <div class="answer">plantiew คือแพลตฟอร์มช่วยวางแผนเที่ยวสำหรับคนไทย ที่เปลี่ยนข้อมูลเที่ยวที่กระจัดกระจายให้กลายเป็นแพลนรายวันที่เข้าใจง่าย พร้อมสถานที่ จุดแวะ แผนที่ แหล่งข้อมูล และ PDF สำหรับเก็บไปใช้ระหว่างทริป</div>
+          </details>
+          <details class="faq-item">
+            <summary>plantiew ใช้ฟรีไหม<span class="pm" aria-hidden="true"></span></summary>
+            <div class="answer">ช่วงเปิดตัวแรก plantiew จะเปิดให้ทดลองใช้ฟรี ตอนนี้อยู่ระหว่างเตรียมเปิด beta ลงอีเมลไว้เพื่อรับสิทธิ์ใช้ก่อนใครได้เลย</div>
+          </details>
+          <details class="faq-item">
+            <summary>plantiew รองรับการเที่ยวประเทศไหนบ้าง<span class="pm" aria-hidden="true"></span></summary>
+            <div class="answer">plantiew ออกแบบให้เป็นแพลตฟอร์มหลายประเทศตั้งแต่แรก รองรับหลายเมือง หลายแหล่งข้อมูล และหลายรูปแบบแพลน ไม่ผูกกับปลายทางเดียว</div>
+          </details>
+          <details class="faq-item">
+            <summary>บันทึกแพลนเป็น PDF ได้ไหม<span class="pm" aria-hidden="true"></span></summary>
+            <div class="answer">ได้ plantiew มีหน้า print-ready สำหรับบันทึกแพลนเป็น PDF พร้อมสถานที่ จุดแวะ Google Maps links และแหล่งข้อมูล เพื่อเก็บไว้ใช้ระหว่างทริปแบบออฟไลน์</div>
+          </details>
+          <details class="faq-item">
+            <summary>plantiew จะเปิดให้ใช้งานเมื่อไหร่<span class="pm" aria-hidden="true"></span></summary>
+            <div class="answer">plantiew กำลังเตรียมเปิด beta เร็ว ๆ นี้ ลงอีเมลในหน้านี้เพื่อรับแจ้งเตือนทันทีที่เปิดให้ใช้งาน</div>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="waitlist">
+      <div class="wrap">
+        <div class="cta-card reveal">
+          <div class="cta-main">
+            <span class="label">Coming soon</span>
+            <h2>รอใช้เวอร์ชันแรก</h2>
+            <p>ลงอีเมลไว้เพื่อรับข่าวตอน plantiew เปิด beta ระบบจะเน้นแพลนเที่ยวที่อ่านง่าย มีแผนที่ มี source และบันทึกเป็น PDF ได้</p>
+            <!-- Web3Forms (free, no backend): สมัครที่ https://web3forms.com → ใส่อีเมลรับผล → เอา Access Key มาแทน YOUR_WEB3FORMS_ACCESS_KEY -->
+            <form class="waitlist" action="https://api.web3forms.com/submit" method="POST" novalidate>
+              <label for="wl-email">กรอกอีเมลของคุณ</label>
+              <input type="hidden" name="access_key" value="1d4c471a-6d63-417e-9c05-0ea34426b871" />
+              <input type="hidden" name="subject" value="plantiew waitlist — สมัครใหม่" />
+              <input type="hidden" name="from_name" value="plantiew waitlist" />
+              <input id="wl-email" type="email" name="email" placeholder="your@email.com" autocomplete="email" required />
+              <input type="checkbox" name="botcheck" tabindex="-1" autocomplete="off" aria-hidden="true" style="display:none" />
+              <button class="btn btn-accent" type="submit">แจ้งฉันเมื่อเปิด</button>
+            </form>
+            <p class="form-status" role="status" aria-live="polite"></p>
+            <p class="micro">ฟรี ไม่ต้องใช้บัตรเครดิต · เราเก็บอีเมลเพื่อแจ้งวันเปิดเท่านั้น · ดู <a href="privacy.html" style="color:var(--blue);font-weight:600">นโยบายความเป็นส่วนตัว</a></p>
+          </div>
+          <div class="cta-side" aria-hidden="true">
+            <div class="row"><span class="ic"><svg><use href="#i-bolt"/></svg></span><span><strong>ใช้ก่อนใคร</strong><span>สิทธิ์ early access</span></span></div>
+            <div class="row"><span class="ic"><svg><use href="#i-globe"/></svg></span><span><strong>หลายประเทศ</strong><span>ขยายปลายทางได้</span></span></div>
+            <div class="row"><span class="ic"><svg><use href="#i-doc"/></svg></span><span><strong>PDF พร้อมพิมพ์</strong><span>เก็บไปใช้ออฟไลน์</span></span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap foot">
+      <span class="fbrand"><span class="brand-mark" aria-hidden="true"><svg><use href="#i-pin"/></svg></span>plantiew</span>
+      <nav class="foot-links" aria-label="ลิงก์ทางกฎหมาย">
+        <a href="privacy.html">นโยบายความเป็นส่วนตัว</a>
+        <a href="terms.html">ข้อกำหนดการใช้งาน</a>
+      </nav>
+      <small>© 2026 plantiew.com · แพลนเที่ยว</small>
+    </div>
+  </footer>
+
+  <script>
+    (function () {
+      document.querySelectorAll("form.waitlist").forEach(function (f) {
+        var input = f.querySelector('input[type="email"]');
+        var btn = f.querySelector('button[type="submit"]');
+        var status = f.parentElement.querySelector(".form-status");
+        var key = f.querySelector('input[name="access_key"]');
+        var setStatus = function (msg, ok) { if (!status) return; status.textContent = msg; status.style.color = ok === false ? "#d23f1a" : "var(--blue-deep)"; };
+        f.addEventListener("submit", function (e) {
+          e.preventDefault();
+          if (!input.value || input.validity.typeMismatch || input.value.indexOf("@") === -1) { setStatus("กรุณากรอกอีเมลให้ถูกต้อง", false); input.focus(); return; }
+          if (!key || !key.value || key.value.indexOf("YOUR_WEB3FORMS_ACCESS_KEY") !== -1) { setStatus("ฟอร์มยังไม่ได้ตั้งค่า — ใส่ Web3Forms access key ในช่อง access_key", false); return; }
+          var original = btn.textContent; btn.disabled = true; btn.textContent = "กำลังส่ง…"; setStatus("");
+          fetch(f.getAttribute("action"), { method: "POST", headers: { "Content-Type": "application/json", Accept: "application/json" }, body: JSON.stringify(Object.fromEntries(new FormData(f))) })
+            .then(function (r) { return r.json(); })
+            .then(function (d) { if (d && d.success) { f.reset(); setStatus("ขอบคุณ! เราจะส่งอีเมลแจ้งเตือนทันทีที่ plantiew เปิดให้ใช้งาน", true); } else { setStatus((d && d.message) ? d.message : "ส่งไม่สำเร็จ ลองใหม่อีกครั้ง", false); } })
+            .catch(function () { setStatus("เชื่อมต่อไม่ได้ ลองใหม่อีกครั้ง", false); })
+            .finally(function () { btn.disabled = false; btn.textContent = original; });
+        });
+      });
+      var nav = document.querySelector(".nav-wrap");
+      addEventListener("scroll", function () { if (nav) nav.classList.toggle("scrolled", scrollY > 8); }, { passive: true });
+      var reduce = matchMedia("(prefers-reduced-motion: reduce)").matches;
+      var reveals = document.querySelectorAll(".reveal");
+      if (reduce || !("IntersectionObserver" in window)) { reveals.forEach(function (el) { el.classList.add("in"); }); }
+      else { var io = new IntersectionObserver(function (es) { es.forEach(function (en) { if (en.isIntersecting) { en.target.classList.add("in"); io.unobserve(en.target); } }); }, { threshold: 0.12 }); reveals.forEach(function (el) { io.observe(el); }); }
+    })();
+  </script>
+</body>
+</html>
