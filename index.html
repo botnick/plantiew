@@ -13,7 +13,7 @@
   <link rel="canonical" href="https://plantiew.com/" />
   <link rel="alternate" hreflang="th" href="https://plantiew.com/" />
   <link rel="alternate" hreflang="x-default" href="https://plantiew.com/" />
-  <link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2032%2032'%3E%3Crect%20width='32'%20height='32'%20rx='9'%20fill='%232f6bff'/%3E%3Cg%20fill='none'%20stroke='%23fff'%20stroke-width='2'%20stroke-linecap='round'%20stroke-linejoin='round'%3E%3Cpath%20d='M16 25s-6-5.2-6-10a6 6 0 0 1 12 0c0 4.8-6 10-6 10Z'/%3E%3Ccircle%20cx='16'%20cy='15'%20r='2.4'/%3E%3C/g%3E%3C/svg%3E" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2032%2032'%3E%3Crect%20width='32'%20height='32'%20rx='9'%20fill='%2315181f'/%3E%3Cg%20fill='none'%20stroke='%23fff'%20stroke-width='2'%20stroke-linecap='round'%20stroke-linejoin='round'%3E%3Cpath%20d='M16 25s-6-5.2-6-10a6 6 0 0 1 12 0c0 4.8-6 10-6 10Z'/%3E%3Ccircle%20cx='16'%20cy='15'%20r='2.4'/%3E%3C/g%3E%3C/svg%3E" />
   <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png" />
   <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
   <link rel="manifest" href="site.webmanifest" />
@@ -156,8 +156,6 @@
     .mp-day { font-size:12px; font-weight:700; color:var(--ink); border-top:1px solid var(--line); padding-top:14px; margin-bottom:10px; }
     .mp-stop { display:flex; gap:11px; margin-bottom:13px; }
     .mp-stop .thumb { width:50px; height:50px; flex:none; border-radius:11px; }
-    .mp-stop .thumb.a { background:linear-gradient(135deg,#ffd9a8,#ff9d6e); }
-    .mp-stop .thumb.b { background:linear-gradient(135deg,#a8d8ff,#6e9dff); }
     .mp-stop strong { display:block; font-size:13px; font-weight:600; }
     .mp-stop span { display:block; font-size:11.5px; color:var(--faint); line-height:1.45; margin-top:2px; }
     .mp-stop em { font-style:normal; font-size:11px; color:var(--coral); font-weight:600; }
@@ -189,11 +187,14 @@
     .ui-row .thumb { width:44px; height:44px; border-radius:10px; flex:none; }
     .ui-row strong { display:block; font-size:13px; font-weight:600; }
     .ui-row span { display:block; font-size:11.5px; color:var(--faint); line-height:1.45; margin-top:2px; }
-    .ui-chips { display:flex; gap:7px; margin-top:13px; }
-    .ui-chip { height:40px; flex:1; border-radius:10px; }
+    .ui-chips { display:flex; gap:8px; margin-top:13px; }
+    .ui-chip { height:58px; flex:1; border-radius:12px; }
     .g1{background:linear-gradient(135deg,#ffd9a8,#ff9d6e);} .g2{background:linear-gradient(135deg,#bfe6c9,#7fcf9b);}
     .g3{background:linear-gradient(135deg,#a8d8ff,#6e9dff);} .g4{background:linear-gradient(135deg,#e6c8ff,#b98cff);}
     .g5{background:linear-gradient(135deg,#ffd0c4,#ff9b86);}
+    .mp-stop .thumb, .ui-chip, .hotel .ph, .trip .ph {
+      background-size:cover; background-position:center; background-repeat:no-repeat; background-color:#eef0f3;
+      box-shadow:inset 0 0 0 1px rgba(20,24,33,.06); }
 
     .hotel-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:9px; margin-top:13px; }
     .hotel { border-radius:12px; overflow:hidden; }
@@ -320,7 +321,7 @@
       <div class="nav">
         <a class="brand" href="#top" aria-label="plantiew.com แพลนเที่ยว">
           <span class="brand-mark" aria-hidden="true"><svg><use href="#i-pin"/></svg></span>
-          <span class="brand-name">plantiew</span>
+          <span class="brand-name">PlanTiew</span>
         </a>
         <nav class="nav-links" aria-label="เมนูหลัก">
           <a href="#features">จุดเด่น</a>
@@ -335,7 +336,6 @@
   <main id="main">
     <section class="hero" id="top">
       <div class="wrap">
-        <span class="pill-tag"><svg width="14" height="14" aria-hidden="true"><use href="#i-spark"/></svg> เตรียมเปิด beta · <b>เข้าใช้ก่อนใคร</b></span>
         <h1 class="hero-title">วางแผนทริปให้เป็นเรื่อง<em>ง่าย</em></h1>
         <p class="hero-lead">
           plantiew เปลี่ยนข้อมูลเที่ยวที่กระจัดกระจาย ให้เป็นแพลนรายวันที่เข้าใจง่าย
@@ -365,12 +365,12 @@
               </div>
               <div class="mp-day">Day 1 · จันทร์ 27 ต.ค.</div>
               <div class="mp-stop">
-                <span class="thumb a" aria-hidden="true"></span>
+                <span class="thumb a" aria-hidden="true" style="background-image:url('https://images.unsplash.com/photo-1578157695179-d7b7ddeb2f53?auto=format&fit=crop&crop=entropy&w=140&h=140&dpr=2&q=80')"></span>
                 <span><strong>เดินย่านเมืองเก่า</strong><span>เริ่มเช้า ๆ ก่อนคนเยอะ ถ่ายรูปวัดเก่า</span><em>09:30 · เชียงใหม่</em></span>
               </div>
               <div class="mp-stop">
-                <span class="thumb b" aria-hidden="true"></span>
-                <span><strong>ร้านอาหารถิ่น</strong><span>ข้าวซอย น้ำพริกหนุ่ม ของกินพื้นเมือง</span><em>12:00 · ใกล้คูเมือง</em></span>
+                <span class="thumb b" aria-hidden="true" style="background-image:url('https://images.unsplash.com/photo-1512553353614-82a7370096dc?auto=format&fit=crop&crop=entropy&w=140&h=140&dpr=2&q=80')"></span>
+                <span><strong>พระธาตุดอยอินทนนท์</strong><span>จุดชมวิวพระมหาธาตุคู่ ทะเลหมอกยามเย็น</span><em>16:30 · ดอยอินทนนท์</em></span>
               </div>
             </div>
             <div class="mock-map" aria-hidden="true">
@@ -412,7 +412,7 @@
                 <div class="ui-row"><span class="dot" aria-hidden="true"></span><span><strong>ตลาดเช้าเมืองเก่า</strong><span>เดินชิม ของพื้นเมือง กาแฟร้านเล็ก · 90 นาที</span></span></div>
                 <div class="ui-row"><span class="dot" aria-hidden="true"></span><span><strong>คาเฟ่ริมน้ำ</strong><span>นั่งพัก ถ่ายรูป วิวดี ไม่พลุกพล่าน · 60 นาที</span></span></div>
                 <div class="ui-chips" aria-hidden="true">
-                  <span class="ui-chip g1"></span><span class="ui-chip g2"></span><span class="ui-chip g3"></span><span class="ui-chip g4"></span>
+                  <span class="ui-chip" style="background-image:url('https://images.unsplash.com/photo-1599576838688-8a6c11263108?auto=format&fit=crop&crop=entropy&w=180&h=130&dpr=2&q=80')"></span><span class="ui-chip" style="background-image:url('https://images.unsplash.com/photo-1596622897385-0086202d383d?auto=format&fit=crop&crop=entropy&w=180&h=130&dpr=2&q=80')"></span><span class="ui-chip" style="background-image:url('https://images.unsplash.com/photo-1682826556362-2c06b7ac75c5?auto=format&fit=crop&crop=entropy&w=180&h=130&dpr=2&q=80')"></span><span class="ui-chip" style="background-image:url('https://images.unsplash.com/photo-1714240230125-531572031bbf?auto=format&fit=crop&crop=entropy&w=180&h=130&dpr=2&q=80')"></span>
                 </div>
               </div>
             </div>
@@ -426,9 +426,9 @@
               <div class="ui">
                 <div style="font-size:12px;font-weight:700;">ที่พักแนะนำ <span style="color:var(--faint);font-weight:500;">· คัดจากสไตล์ทริป</span></div>
                 <div class="hotel-grid" aria-hidden="true">
-                  <div class="hotel"><div class="ph g1"></div><small>โรงแรมเมืองเก่า</small><div class="rate">★ 4.8</div></div>
-                  <div class="hotel"><div class="ph g3"></div><small>บูทีคริมน้ำ</small><div class="rate">★ 4.7</div></div>
-                  <div class="hotel"><div class="ph g2"></div><small>โฮสเทลสายชิล</small><div class="rate">★ 4.6</div></div>
+                  <div class="hotel"><div class="ph" style="background-image:url('https://images.unsplash.com/photo-1618773928121-c32242e63f39?auto=format&fit=crop&crop=entropy&w=260&h=180&dpr=2&q=80')"></div><small>โรงแรมเมืองเก่า</small><div class="rate">★ 4.8</div></div>
+                  <div class="hotel"><div class="ph" style="background-image:url('https://images.unsplash.com/photo-1611892440504-42a792e24d32?auto=format&fit=crop&crop=entropy&w=260&h=180&dpr=2&q=80')"></div><small>บูทีคริมน้ำ</small><div class="rate">★ 4.7</div></div>
+                  <div class="hotel"><div class="ph" style="background-image:url('https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?auto=format&fit=crop&crop=entropy&w=260&h=180&dpr=2&q=80')"></div><small>โฮสเทลสายชิล</small><div class="rate">★ 4.6</div></div>
                 </div>
               </div>
             </div>
@@ -458,14 +458,14 @@
               <div class="ui">
                 <div style="font-size:12px;font-weight:700;margin-bottom:4px;">ทริปของฉัน</div>
                 <div class="trips-grid" aria-hidden="true">
-                  <div class="trip"><div class="ph g3"></div><small>เชียงใหม่ · 3 วัน</small></div>
-                  <div class="trip"><div class="ph g1"></div><small>กรุงเทพ · 2 วัน</small></div>
-                  <div class="trip"><div class="ph g2"></div><small>ภูเก็ต · 4 วัน</small></div>
-                  <div class="trip"><div class="ph g4"></div><small>ญี่ปุ่น · 6 วัน</small></div>
-                  <div class="trip"><div class="ph g5"></div><small>เกาหลี · 5 วัน</small></div>
-                  <div class="trip"><div class="ph g2"></div><small>น่าน · 3 วัน</small></div>
-                  <div class="trip"><div class="ph g3"></div><small>เวียดนาม · 4 วัน</small></div>
-                  <div class="trip"><div class="ph g1"></div><small>ปาย · 2 วัน</small></div>
+                  <div class="trip"><div class="ph" style="background-image:url('https://images.unsplash.com/photo-1578157695179-d7b7ddeb2f53?auto=format&fit=crop&crop=entropy&w=240&h=160&dpr=2&q=80')"></div><small>เชียงใหม่ · 3 วัน</small></div>
+                  <div class="trip"><div class="ph" style="background-image:url('https://images.unsplash.com/photo-1508009603885-50cf7c579365?auto=format&fit=crop&crop=entropy&w=240&h=160&dpr=2&q=80')"></div><small>กรุงเทพ · 2 วัน</small></div>
+                  <div class="trip"><div class="ph" style="background-image:url('https://images.unsplash.com/photo-1551418843-01c6b62e864d?auto=format&fit=crop&crop=entropy&w=240&h=160&dpr=2&q=80')"></div><small>ภูเก็ต · 4 วัน</small></div>
+                  <div class="trip"><div class="ph" style="background-image:url('https://images.unsplash.com/photo-1545569341-9eb8b30979d9?auto=format&fit=crop&crop=entropy&w=240&h=160&dpr=2&q=80')"></div><small>ญี่ปุ่น · 6 วัน</small></div>
+                  <div class="trip"><div class="ph" style="background-image:url('https://images.unsplash.com/photo-1538485399081-7191377e8241?auto=format&fit=crop&crop=entropy&w=240&h=160&dpr=2&q=80')"></div><small>เกาหลี · 5 วัน</small></div>
+                  <div class="trip"><div class="ph" style="background-image:url('https://images.unsplash.com/photo-1723460626293-3c52ef6fca15?auto=format&fit=crop&crop=entropy&w=240&h=160&dpr=2&q=80')"></div><small>น่าน · 3 วัน</small></div>
+                  <div class="trip"><div class="ph" style="background-image:url('https://images.unsplash.com/photo-1528127269322-539801943592?auto=format&fit=crop&crop=entropy&w=240&h=160&dpr=2&q=80')"></div><small>เวียดนาม · 4 วัน</small></div>
+                  <div class="trip"><div class="ph" style="background-image:url('https://images.unsplash.com/photo-1727843506460-58ab6b4b3d01?auto=format&fit=crop&crop=entropy&w=240&h=160&dpr=2&q=80')"></div><small>ปาย · 2 วัน</small></div>
                 </div>
               </div>
             </div>
@@ -545,7 +545,7 @@
         <div class="foot-brand">
           <a class="brand" href="#top" aria-label="plantiew.com">
             <span class="brand-mark" aria-hidden="true"><svg><use href="#i-pin"/></svg></span>
-            <span class="brand-name">plantiew</span>
+            <span class="brand-name">PlanTiew</span>
           </a>
           <p>แพลตฟอร์มช่วยวางแผนเที่ยวสำหรับคนไทย เปลี่ยนข้อมูลเที่ยวให้เป็นแพลนรายวันที่ใช้ได้จริง</p>
         </div>
